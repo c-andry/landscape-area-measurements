@@ -1,5 +1,7 @@
 # landscape-area-measurements
 This repository contains a notebook for classifying landcover and calculating landscaped areas for an urban setting.
+[![DOI](https://zenodo.org/badge/368932347.svg)](https://zenodo.org/badge/latestdoi/368932347)
+
 
 ## Background
 In 2018, the state of California passed legislation related to water conservation and drought planning. This legislation will require all urban water retailers to meet state-defined annual water use targets. To meet these objectives, retailers will need to more closely track the different components of their water use budgets (e.g. residential indoor, residential outdoor, commercial outdoor, etc.).
