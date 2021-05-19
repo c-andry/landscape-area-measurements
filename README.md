@@ -1,5 +1,6 @@
 # landscape-area-measurements
 This repository contains a notebook for classifying landcover and calculating landscaped areas for an urban setting.
+
 [![DOI](https://zenodo.org/badge/368932347.svg)](https://zenodo.org/badge/latestdoi/368932347)
 
 
