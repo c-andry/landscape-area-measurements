@@ -6,24 +6,23 @@ In 2018, the state of California passed legislation related to water conservatio
 
 This workflow focuses specifically on commercial parcels, and will outline an approach for retailers to remotely calculate the total landscaped area of these properties using classified 1 meter resolution NAIP imagery, county parcel data, and point locations of irrigation meters.
 
-# Packages used
-* geopandas
-* matplotlib
-* earthpy
-* rioxarray
-* rasterio
-* scikit-learn
+# Description of files in this repository
+* landscape-area-measurements.ipynb : Notebook that classifies imagery and calculates total commercial landscaped area for a given agency's service area.
+* lam-functions.py : Module containing functions for running notebook.
+* landscape-area-measurements.html : Blog post describing project and displaying results.
 
-# Data used
-* 4-band NAIP imagery rasters
-* County parcel shapefile
-* Landcover training polygon shapefile
+# Running this workflow
+
+## Environment
+This workflow utilizes the <a href="https://github.com/earthlab/earth-analytics-python-env" target="_blank"> earth-analytics-python environment </a>.
+
+## Data used
+* 4-band NAIP imagery rasters - Individual tiles can be downloaded from <a href="https://earthexplorer.usgs.gov/" target="_blank"> USGS Earth Explorer </a>.
+* County parcel shapefile - e.g. <a href="https://geohub.lacity.org/datasets/lahub::la-county-parcels/about" target="_blank"> LA County Parcel Data </a>.
+* Landcover training polygon shapefile - For this workflow, shapefile was manually created in ArcGIS Pro.
 * Agency (or area of interest) service area boundary shapefile
 
-# Description of files in this repository
-landscape-area-measurements.ipynb : Notebook that classifies imagery and calculates total commercial landscaped area for a given agency's service area.
-
-# Analysis Workflow
+## Analysis Workflow
 * Open landscape-area-measurements.ipynb notebook
 * Change directory to where data are stored
 * Run notebook
