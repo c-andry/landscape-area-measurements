@@ -9,7 +9,7 @@ In 2018, the state of California passed legislation related to water conservatio
 
 This workflow focuses specifically on commercial parcels, and will outline an approach for retailers to remotely calculate the total landscaped area of these properties using classified 1 meter resolution NAIP imagery, county parcel data, and point locations of irrigation meters.
 
-# Description of files in this repository
+## Description of files in this repository
 * landscape-area-measurements.ipynb : Notebook that classifies imagery and calculates total commercial landscaped area for a given agency's service area.
 * lam-functions.py : Module containing functions for running notebook.
 * landscape-area-measurements.html : Blog post outlining project and displaying results.
