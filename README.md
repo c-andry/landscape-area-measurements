@@ -1,5 +1,5 @@
 # landscape-area-measurements
-This repository contains a notebook for classifying landcover from a single NAIP tile and calculating vegetation areas.
+This repository contains a notebook for classifying landcover from a single NAIP tile using Random Forests and calculating vegetation areas.
 
 [![DOI](https://zenodo.org/badge/368932347.svg)](https://zenodo.org/badge/latestdoi/368932347)
 
