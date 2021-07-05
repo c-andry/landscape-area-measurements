@@ -12,7 +12,7 @@ This workflow focuses specifically on commercial parcels, and will outline an ap
 # Description of files in this repository
 * landscape-area-measurements.ipynb : Notebook that classifies imagery and calculates total commercial landscaped area for a given agency's service area.
 * lam-functions.py : Module containing functions for running notebook.
-* landscape-area-measurements.html : Blog post describing project and displaying results.
+* landscape-area-measurements.html : Blog post outlining project and displaying results.
 
 # Running this workflow
 
@@ -21,29 +21,28 @@ This workflow utilizes the <a href="https://github.com/earthlab/earth-analytics-
 
 ## Data used
 * 4-band NAIP imagery rasters - Individual tiles can be downloaded from <a href="https://earthexplorer.usgs.gov/" target="_blank"> USGS Earth Explorer </a>.
-* County parcel shapefile - e.g. <a href="https://geohub.lacity.org/datasets/lahub::la-county-parcels/about" target="_blank"> LA County Parcel Data </a>.
+* County parcel vector data - e.g. <a href="https://geohub.lacity.org/datasets/lahub::la-county-parcels/about" target="_blank"> LA County Parcel Data </a>.
 * Landcover training polygon shapefile - For this workflow, shapefile was manually created in ArcGIS Pro.
-* Agency (or area of interest) service area boundary shapefile
 =======
 ## Packages used
 * geopandas
 * matplotlib
+* json
+* requests
 * earthpy
+* xarray
 * rioxarray
 * rasterio
-* scikit-learn
-
-## Data used
-* 4-band NAIP imagery rasters
-* County parcel shapefile
-* Landcover training polygon shapefile
-* Agency (or area of interest) service area boundary shapefile
+* shapely
+* sklearn
 
 ## Description of files in this repository
 landscape-area-measurements.ipynb : Notebook that classifies imagery and calculates total commercial landscaped area for a given agency's service area.
->>>>>>> f4aa171bd156a301f04b8b121921c57e48b34d4b
+
+lam_functions.py : Module with functions created for use in notebook
 
 ## Analysis Workflow
+* Create training dataset - I used ArcGIS Pro to manually draw polygons delineating pixels of known classes. Export data as a raster of same extent as NAIP tile and save to data/training folder.
+* Clone landscape-area-measurements repo to local directory
 * Open landscape-area-measurements.ipynb notebook
-* Change directory to where data are stored
 * Run notebook
